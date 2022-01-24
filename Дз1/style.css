@@ -1,5 +1,20 @@
-.image-two{
-width: 300;
-height: 200;
+img.image-two{
+	width: 200;
+	height: 250;
 }
-
+img.image-three {
+    height: 200px;
+}
+img.images-five{
+  width: 100px;
+  height: 70px;
+}
+img.images-six{
+	width: 100px;
+  float: left;
+}
+img.images-seven{
+	width: 100px;
+  height: 100px;
+  float: right;
+}
