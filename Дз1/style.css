@@ -1,19 +1,22 @@
-img.image-two{
-	width: 200;
-	height: 250;
+.image-two{
+	width: 200px;
+	height: 250px;
 }
-img.image-three {
+.image-three {
     height: 200px;
 }
-img.images-five{
+.images-four{
+   text-align: center;
+}
+.images-five{
   width: 100px;
   height: 70px;
 }
-img.images-six{
+.images-six{
 	width: 100px;
   float: left;
 }
-img.images-seven{
+.images-seven{
 	width: 100px;
   height: 100px;
   float: right;
