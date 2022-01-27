@@ -3,10 +3,10 @@
 	height: 250px;
 }
 .image-three {
-    height: 200px;
+  height: 200px;
 }
 .images-four{
-   text-align: center;
+  text-align: center;
 }
 .images-five{
   width: 100px;
@@ -17,7 +17,7 @@
   float: left;
 }
 .images-seven{
-	width: 100px;
+  width: 100px;
   height: 100px;
   float: right;
 }
