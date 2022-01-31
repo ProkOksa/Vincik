@@ -1,6 +1,5 @@
-body {
+.basic {
     width: 500px;
-    height: 700px;
 }
 
 h1 {
@@ -10,7 +9,6 @@ h1 {
 .image {
     width: 200px;
     height: 225px;
-    display: block;
     margin-left: auto;
     margin-right: auto
 }
