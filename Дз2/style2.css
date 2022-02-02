@@ -1,0 +1,19 @@
+.basic {
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
