@@ -1,0 +1,18 @@
+p {
+    color: orange;
+    font-weight: bold;
+}
+
+.first-paragraph {
+    text-align: right;    
+}
+
+.second-paragraph {
+    background-color: green;
+    font-weight: normal;
+}
+
+.third-paragraph {
+    font-size: 30px;
+    text-align: center;
+}

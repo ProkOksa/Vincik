@@ -1,0 +1,11 @@
+a[href^="/"]{
+	color: #f70;
+}
+
+a[href^="https://g"]{
+	color: #666;
+}
+
+[target="_blank"]:after{
+	content: "\21F1";
+}
