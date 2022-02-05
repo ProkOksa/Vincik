@@ -1,18 +1,70 @@
-p {
+        /*текст*/
+
+h1 {
     color: orange;
+    text-align: right;
+}
+
+p:first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+em {
+    color: white;
+    background-color: green;
+}
+
+         /*Список*/
+
+h2 {
+    color: orange;
+    text-align: left;
+}
+
+ul {
     font-weight: bold;
 }
 
-.first-paragraph {
-    text-align: right;    
+.warehouse {
+    color: blue;
 }
 
-.second-paragraph {
-    background-color: green;
-    font-weight: normal;
+
+.fruit {
+    color: gray;
 }
 
-.third-paragraph {
-    font-size: 30px;
-    text-align: center;
+.vegetables {
+    color: red;
 }
+
+.fruit1 {
+    color: green;
+}
+
+/*Таблица*/
+table{
+    border: 1px solid gray;
+    color: black;
+}
+
+
+#thead{
+    font-weight: bold;
+    color: black;
+}
+
+th, td:first-child {
+    background: white;
+    color: orange;
+} 
+
+th, td{
+    border: 1px solid gray;
+    background: green;
+    color: white;
+}
+
+
+
