@@ -1,4 +1,4 @@
-        /*текст*/
+/*текст*/
 
 h1 {
     color: orange;
@@ -15,7 +15,7 @@ em {
     background-color: green;
 }
 
-         /*Список*/
+/*Список*/
 
 h2 {
     color: orange;
@@ -44,27 +44,24 @@ ul {
 }
 
 /*Таблица*/
-table{
+
+table {
     border: 1px solid gray;
-    color: black;
 }
 
-
-#thead{
-    font-weight: bold;
-    color: black;
-}
-
-th, td:first-child {
-    background: white;
-    color: orange;
-} 
-
-th, td{
-    border: 1px solid gray;
+td {
     background: green;
     color: white;
+    text-align: center;
 }
 
+td:first-child {
+    background: white;
+    color: orange;
+    text-align: left;
+}
 
-
+th,td {
+    width: 80px;
+    border: 1px solid gray;
+}

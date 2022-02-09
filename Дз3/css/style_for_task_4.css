@@ -2,10 +2,12 @@ a[href^="/"]{
 	color: #f70;
 }
 
-a[href^="https://g"]{
+a[href*="googl"]{
 	color: #666;
 }
 
 [target="_blank"]:after{
 	content: "\21F1";
+	text-decoration: none;
 }
+

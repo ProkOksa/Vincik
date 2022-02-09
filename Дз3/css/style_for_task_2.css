@@ -1,7 +1,7 @@
-.first-paragraph {
+p:first-child {
     font-size: xxx-large;
 }
 
-.third-paragraph {
+p:last-child {
     color: #999;
 }
