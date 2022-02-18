@@ -1,0 +1,9 @@
+a[href^="/"]{
+	color: #f70;
+}
+
+a[href*="googl"]{
+	color: #666;
+}
+
+

@@ -1,0 +1,67 @@
+/*текст*/
+
+h1 {
+    color: orange;
+    text-align: right;
+}
+
+p:first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+em {
+    color: white;
+    background-color: green;
+}
+
+/*Список*/
+
+h2 {
+    color: orange;
+    text-align: left;
+}
+
+ul {
+    font-weight: bold;
+}
+
+.warehouse {
+    color: blue;
+}
+
+
+.fruit {
+    color: gray;
+}
+
+.vegetables {
+    color: red;
+}
+
+.fruit1 {
+    color: green;
+}
+
+/*Таблица*/
+
+table {
+    border: 1px solid gray;
+}
+
+td {
+    background: green;
+    color: white;
+    text-align: center;
+}
+
+td:first-child {
+    background: white;
+    color: orange;
+    text-align: left;
+}
+
+th,td {
+    width: 80px;
+    border: 1px solid gray;
+}
