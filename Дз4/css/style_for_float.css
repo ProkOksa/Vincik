@@ -82,11 +82,20 @@ div {
     background-color: #00FF7F;
 }
 
-.section {
-    width: 100%;
+.section4_1 {
+    float: left;
+    width: 66%;
     height: 50px;
     background-color: #BC8F8F;
 }
+
+.section4_2 {
+    float: right;
+    width: 34%;
+    height: 50px;
+    background-color: #EE82EE;
+}
+
 
 .section3_1 {
 
