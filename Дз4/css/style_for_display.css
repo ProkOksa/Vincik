@@ -1,119 +1,154 @@
-div {
+div div {
   text-align: center;
   display: inline-block;
-}
-
-.main {
-  display: flex;
-}
-
-.box1_1 {
-	flex: 1;
   height: 50px;
+}
+
+.text1 {
+	width: 33%;
+	height: 50px;
+	margin-left: -4px;
   background-color: #DCDCDC;
 }
 
-.box1_2 {
-	flex: 1;
-  height: 50px;
+.text2 {
+	width: 33%;
+	height: 50px;
+	margin-left: -4px;
+	margin-right: -4px;
   background-color: #D3D3D3;
 }
 
-.box1_3 {
-	flex: 1;
-  height: 50px;
+.text3 {
+	width: 34%;
+	height: 50px;
   background-color: #C0C0C0;
 }
 
-.box21 {
-  flex: 2;
+.text4 {
+	width: 66%;
+	height: 50px;
+	margin-right: -7px;
+	padding-top: 100px;
+
   background-color: #FFF8DC;
 }
 
-.box22 {
-  flex: 1;
+.box2_2 {
+	width: 34%;
+	height: 150%;
+	margin-right: 0px;
 }
 
-.box2_1{
+.text5{
 	background-color: #FFEBCD;
 }
-.box2_2{
+.text6{
 	background-color: #FFE4C4;
 }
-.box2_3{
+.text7{
 	background-color: #FFDEAD;
 }
-.box3,
-.box5,
-.box6 {
-  flex: 1;
-  height: 100px;
-  display: inline-block;
-}
+
 
 .small {
   width: 100%;
   height: 50px;
 }
 
-.box31{
+.text8{
 	background-color: #98FB98;
-}
-
-.box33{
-	background-color: #90EE90;
-}
-
-.box3_1{
-	background-color: #00FA9A;
+	width: 33%;
+	padding-top: 50px;
+    margin-right: -4px;
 }
 
 .box3_2{
+	width: 33%;
+
+}
+
+.text9{
+	background-color: #00FA9A;
+}
+
+.text10{
 	background-color: #00FF7F;
 }
 
-.box4_1{
-	flex: 2;
-background-color: #BC8F8F;
+.text11{
+	background-color: #90EE90;
+	width: 34%;
+	    padding-top: 50px;
+    margin-left: -6px;
 }
 
-.box4_2{
-	flex: 1;
-background-color: #EE82EE;
+.text12{
+	background-color: #BC8F8F;
+	width: 66%;
+	
 }
 
-.box51{
+.text13{
+	background-color: #EE82EE;
+	width: 34%;
+	    margin-left: -6px;
+}
+
+.text14{
 	background-color: #40E0D0;
+	width: 33%;
+	padding-top: 50px;
+	margin-right: -4px;
 }
 
-.box52{
+.text15{
 	background-color: #7FFFD4;
+	width: 33%;
+	padding-top: 50px;
+
 }
 
-.box5_1{
+.box5_3{
+	width: 34%;
+	margin-left: -6px;
+}
+
+.text16{
 	background-color: #AFEEEE;
 }
 
-.box5_2{
+.text17{
 	background-color: #48D1CC;
 }
 
 .box6_1{
+	width: 33%;
+	margin-right: -4px;
+
+}
+.text18{
 	background-color: #CD5C5C;
 }
 
-.box6_2{
+.text19{
 	background-color: #E9967A;
 }
 
-.box62{
+.text20{
 	background-color: #F08080;
+	width: 33%;
+	padding-top: 50px;
 }
 
 .box6_3{
+	width: 34%;
+	margin-left: -6px;
+}
+.text21{
 	background-color: #FA8072;
 }
 
-.box6_4{
+.text22{
 	background-color: #FF7F50;
 }

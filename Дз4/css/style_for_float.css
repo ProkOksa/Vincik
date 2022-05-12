@@ -1,6 +1,4 @@
 div {
-   position: relative;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -23,6 +21,11 @@ div {
     float: left;
     width: 34%;
     height: 50px;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
 }
 
 .section1_1 {
@@ -157,7 +160,11 @@ div {
 }
 
 .footer5 {
-    width: 33%;
-    height: 100px;
     background-color: #FF7F50;
+    height: 550px;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
 }
