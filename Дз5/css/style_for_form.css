@@ -1,0 +1,105 @@
+body {
+  background-color: #F4F0E8;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+span {
+  font-size: 17px;
+}
+
+p {
+  font-weight: bold;
+  color: #14A4A9;
+}
+
+select {
+  width: 200px;
+}
+
+select::-webkit-scrollbar {
+  width: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: gray;
+}
+
+
+input::placeholder {
+  font-family: Comic Sans MS, cursive;
+  font-size: 10px;
+  color: #18E88D;
+}
+
+.switch {
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.wrapper,
+.position1,
+.position2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+
+.button,
+.position2 {
+  border-radius: 100px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.position1 {
+  z-index: 1;
+
+}
+
+.position2 {
+  background-color: #000000;
+}
+
+#b1 .position1:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  padding: 9px 4px;
+  background-color: #FF0000;
+  border-radius: 50%;
+}
+
+#b1 .checkbox:checked~.position1:before {
+  content: "";
+  left: 42px;
+  background-color: #000000;
+}
+
+#b1 .checkbox:checked~.position2 {
+  background-color: #FF0000;
+}
