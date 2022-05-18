@@ -1,170 +1,169 @@
 div {
-    text-align: center;
+  text-align: center;
 }
 
 .header1 {
-    background-color: #DCDCDC;
-    float: left;
-    width: 33%;
-    height: 50px;
+  background-color: #DCDCDC;
+  float: left;
+  width: 33%;
+  height: 50px;
 }
 
 .header2 {
-    background-color: #D3D3D3;
-    float: left;
-    width: 33%;
-    height: 50px;
+  background-color: #D3D3D3;
+  float: left;
+  width: 33%;
+  height: 50px;
 }
 
 .header3 {
-    background-color: #C0C0C0;
-    float: left;
-    width: 34%;
-    height: 50px;
+  background-color: #C0C0C0;
+  float: left;
+  width: 34%;
+  height: 50px;
 }
 
 .clearfix:after {
-    content: " ";
-    clear: both;
+  content: " ";
+  clear: both;
 }
 
 .section1_1 {
-    float: left;
-    width: 66%;
-    height: 150px;
-    background-color: #FFF8DC;
+  float: left;
+  width: 66%;
+  height: 150px;
+  background-color: #FFF8DC;
 }
 
 .section1_2 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #FFEBCD;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #FFEBCD;
 }
 
 .section1_3 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #FFE4C4;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #FFE4C4;
 }
 
 .section1_4 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #FFDEAD;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #FFDEAD;
 }
 
 .section2_1 {
 
-    float: left;
-    width: 33%;
-    height: 100px;
-    background-color: #98FB98
+  float: left;
+  width: 33%;
+  height: 100px;
+  background-color: #98FB98
 }
 
 .section2_2 {
-    float: left;
-    width: 33%;
-    height: 50px;
-    background-color: #90EE90;
+  float: left;
+  width: 33%;
+  height: 50px;
+  background-color: #90EE90;
 }
 
 .section2_3 {
-    float: right;
-    width: 34%;
-    height: 100px;
-    background-color: #00FA9A;
+  float: right;
+  width: 34%;
+  height: 100px;
+  background-color: #00FA9A;
 }
 
 .section2_4 {
-    float: left;
-    width: 33%;
-    height: 50px;
-    background-color: #00FF7F;
+  float: left;
+  width: 33%;
+  height: 50px;
+  background-color: #00FF7F;
 }
 
 .section4_1 {
-    float: left;
-    width: 66%;
-    height: 50px;
-    background-color: #BC8F8F;
+  float: left;
+  width: 66%;
+  height: 50px;
+  background-color: #BC8F8F;
 }
 
 .section4_2 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #EE82EE;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #EE82EE;
 }
 
-
 .section3_1 {
-
-    float: left;
-    width: 33%;
-    height: 100px;
-    background-color: #40E0D0;
+  float: left;
+  width: 33%;
+  height: 100px;
+  background-color: #40E0D0;
 }
 
 .section3_2 {
-    float: left;
-    width: 33%;
-    height: 100px;
-    background-color: #7FFFD4;
+  float: left;
+  width: 33%;
+  height: 100px;
+  background-color: #7FFFD4;
 }
 
 .section3_3 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #AFEEEE;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #AFEEEE;
 }
 
 .section3_4 {
-    float: right;
-    width: 34%;
-    height: 50px;
-    background-color: #48D1CC;
+  float: right;
+  width: 34%;
+  height: 50px;
+  background-color: #48D1CC;
 }
 
 .first_column {
-    float: left;
-    width: 33%;
+  float: left;
+  width: 33%;
 }
 
 .last_column {
-    float: right;
-    width: 34%;
+  float: right;
+  width: 34%;
 }
 
 .footer1 {
-    height: 50px;
-    background-color: #CD5C5C;
+  height: 50px;
+  background-color: #CD5C5C;
 }
 
 .footer2 {
-    height: 50px;
-    background-color: #E9967A
+  height: 50px;
+  background-color: #E9967A
 }
 
 .footer3 {
-    height: 50px;
-    background-color: #F08080;
+  height: 50px;
+  background-color: #F08080;
 }
 
 .footer4 {
-    height: 50px;
-    background-color: #FA8072;
+  height: 50px;
+  background-color: #FA8072;
 }
 
 .footer5 {
-    background-color: #FF7F50;
-    height: 550px;
+  background-color: #FF7F50;
+  height: 100px;
 }
 
 .clearfix:after {
-    content: " ";
-    clear: both;
+  content: " ";
+  clear: both;
+  display: block;
 }

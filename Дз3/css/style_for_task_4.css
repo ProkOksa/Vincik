@@ -1,9 +1,9 @@
-a[href^="/"]{
-	color: #f70;
+.offline{
+	color: #FF7700;
 }
 
 a[href*="googl"]{
-	color: #666;
+	color: #666666;
 }
 
 
