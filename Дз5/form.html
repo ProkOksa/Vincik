@@ -8,51 +8,51 @@
 </head>
 
 <body>
-  <span>Форма</span>
+  <h1>Форма</h1>
   <hr>
   <form action="/">
     <div>
       <p>Логин</p>
-      <input type="text" placeholder="введтите логин" name="">
+      <input type="text" placeholder="логин">
       <p>Пароль</p>
-      <input type="password" placeholder="введтите пароль" name="">
+      <input type="password" placeholder="пароль">
     </div>
     <div>
       <p>Оцените наш сайт</p>
-      <label>
-        <input type="radio" name="grade">
-        Отлично
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span>Отлично</span>
       </label><br>
-      <label>
-        <input type="radio" name="grade">
-        Хорошо
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span>Хорошо</span>
       </label><br>
-      <label>
-        <input type="radio" name="grade">
-        Плохо
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span>Плохо</span>
       </label>
     </div>
     <div>
       <p>Как вы проводите свое свободное время?</p>
-      <label>
-        <input type="checkbox" name="leisure">
-        Читаю книгу
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Читаю книгу</span>
       </label><br>
-      <label>
-        <input type="checkbox" name="leisure">
-        Смотрю ТВ
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Смотрю ТВ</span>
+      </label class="leisure"><br>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Читаю книгу</span>
       </label><br>
-      <label>
-        <input type="checkbox" name="leisure">
-        Читаю книгу
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Слушаю музыку</span>
       </label><br>
-      <label>
-        <input type="checkbox" name="leisure">
-        Слушаю музыку
-      </label><br>
-      <label>
-        <input type="checkbox" name="leisure">
-        Гуляю с друзьями
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Гуляю с друзьями</span>
       </label>
     </div>
     <div>
@@ -74,11 +74,11 @@
     </div>
     <div>
       <p>Количество</p>
-      <input type="range" id="skrol" min="0" max="10" step="2" value="6">
+      <input type="range" id="skrol" min="0" max="10" step="2" value="0">
     </div>
     <div>
       <p>Поиск</p>
-      <input type="text" placeholder="Поиск" name="">
+      <input type="text" placeholder="поиск" name="">
     </div>
     <div>
       <p>Включить</p>
