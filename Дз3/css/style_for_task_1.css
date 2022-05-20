@@ -1,7 +1,7 @@
 /*текст*/
 
 h1 {
-    color: #FFA500e;
+    color: #FFA500;
     text-align: right;
 }
 
@@ -11,7 +11,7 @@ p:first-letter {
 }
 
 em {
-    color: white;
+    color: #FFFFFF;
     background-color: #008000;
 }
 
@@ -56,7 +56,7 @@ td {
 }
 
 td:first-child {
-    background: white;
+    background: #FFFFFF;
     color: #FFA500;
     text-align: left;
 }
