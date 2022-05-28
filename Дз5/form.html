@@ -13,23 +13,23 @@
   <form action="/">
     <div>
       <p>Логин</p>
-      <input type="text" placeholder="логин">
+      <input type="text" name="log" placeholder="логин">
       <p>Пароль</p>
-      <input type="password" placeholder="пароль">
+      <input type="password" name="pas" placeholder="пароль">
     </div>
     <div>
       <p>Оцените наш сайт</p>
       <label class="grade">
         <input type="radio" name="gra">
-        <span>Отлично</span>
+        <span class="radio_text">Отлично</span>
       </label><br>
       <label class="grade">
         <input type="radio" name="gra">
-        <span>Хорошо</span>
+        <span class="radio_text">Хорошо</span>
       </label><br>
       <label class="grade">
         <input type="radio" name="gra">
-        <span>Плохо</span>
+        <span class="radio_text">Плохо</span>
       </label>
     </div>
     <div>
@@ -82,14 +82,11 @@
     </div>
     <div>
       <p>Включить</p>
-      <div class="switch">
-        <div class="wrapper">
-          <div class="button" id="b1">
-            <input type="checkbox" class="checkbox">
-            <div class="position1"></div>
-            <div class="position2"></div>
-          </div>
-        </div>
+      <div class="wrapper">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </div>
     </div>
     <div>
@@ -97,7 +94,7 @@
       <textarea cols="30" rows="5"></textarea>
     </div>
     <div>
-      <input type="submit" value="Отправить">
+      <button>Отправить</button>
     </div>
   </form>
 </body>
