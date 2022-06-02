@@ -1,24 +1,24 @@
 /*текст*/
 
 h1 {
-    color: orange;
+    color: #FFA500;
     text-align: right;
 }
 
 p:first-letter {
     font-size: 200%;
-    color: red;
+    color: #FF0000;
 }
 
 em {
-    color: white;
-    background-color: green;
+    color: #FFFFFF;
+    background-color: #008000;
 }
 
 /*Список*/
 
 h2 {
-    color: orange;
+    color: #FFA500;
     text-align: left;
 }
 
@@ -27,41 +27,41 @@ ul {
 }
 
 .warehouse {
-    color: blue;
+    color: #0000FF;
 }
 
 
 .fruit {
-    color: gray;
+    color: #808080;
 }
 
 .vegetables {
-    color: red;
+    color: #FF0000;
 }
 
 .fruit1 {
-    color: green;
+    color: #008000;
 }
 
 /*Таблица*/
 
 table {
-    border: 1px solid gray;
+    border: 1px solid #808080;
 }
 
 td {
-    background: green;
-    color: white;
+    background: #008000;
+    color: #FFFFFF;
     text-align: center;
 }
 
 td:first-child {
-    background: white;
-    color: orange;
+    background: #FFFFFF;
+    color: #FFA500;
     text-align: left;
 }
 
 th,td {
     width: 80px;
-    border: 1px solid gray;
+    border: 1px solid #808080;
 }
