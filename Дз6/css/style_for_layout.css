@@ -1,0 +1,100 @@
+body {
+  font-family: Optima, sans-serif;
+  font-size: 130%;
+}
+
+header,
+p,
+button {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+header{
+	margin: 3% 0% 3% 0%;
+	
+}
+
+.price {
+  text-align: center;
+  margin: 5% 0% 10% 0%;
+}
+
+strong {
+  font-size: 300%;
+}
+
+span:before {
+  content: '$';
+  position: absolute;
+  margin-left: -1%;
+}
+
+.offer1,
+.offer2,
+.offer3 {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #D5D5D5;
+  border-radius: 3%;
+}
+
+.product_name1,
+.product_name2,
+.product_name3 {
+  border-radius: 5% 5% 0 0;
+  margin: 0;
+  padding: 5%;
+  color: #FFFFFF;
+}
+
+.product_name1 {
+  background-color: #1EC3D7;
+}
+
+.product_name2 {
+  background-color: #EC8914;
+}
+
+.product_name3 {
+  background-color: #4CC984;
+}
+
+table {
+  width: 100%;
+  padding: 2%;
+  font-size: 65%;
+}
+
+td {
+  padding-left: 20%;
+}
+
+td:before {
+  content: '\2714';
+  position: absolute;
+  margin-left: -2%;
+  color: #76CA2C;
+  font-weight: 900;
+}
+
+tr:nth-child(2n+1) {
+  background-color: #F4F4F4;
+}
+
+tr:nth-child(2n) {
+  background-color: #EFF7FD;
+}
+
+button {
+  width: 90%;
+  text-align: 65%;
+  background: #2B459B;
+  padding: 3px 7px;
+  color: #FFFFFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 5px solid #2B459B;
+}
