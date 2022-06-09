@@ -1,0 +1,194 @@
+body {
+  background-color: #F4F0E8;
+  font-family: Comic Sans MS, cursive;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 17px;
+}
+
+p {
+  font-weight: bold;
+  color: #14A4A9;
+}
+
+input::placeholder {
+  font-family: segoe print, cursive;
+  font-size: 10px;
+  color: #18E88D;
+}
+
+/* --- Оцените наш сайт--- */
+.grade input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio_text {
+  position: relative;
+  padding: 0 15px 0 0;
+}
+
+.radio_text:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ADB5BD;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.radio_text:after {
+  content: '';
+  position: absolute;
+  top: 50%;                                  
+  left: 50%;                               
+  transform: translate(-50%, -50%);             
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0B76EF;
+  opacity: 0;
+}
+
+.grade input:checked+.radio_text:after {
+  opacity: 1;
+}
+
+.grade input:checked+.radio_text:before {
+  border: 1px solid #0B76EF;
+}
+
+/*------ Как вы проводите свое свободное время -----*/
+.leisure>input {
+  position: absolute;
+  opacity: 0;
+}
+
+.leisure>span::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ADB5BD;
+  border-radius: 3px;
+  margin-right: 5px;
+  background: center no-repeat #FFFFFF;
+  background-size: 70% 70%;
+}
+
+.leisure>input:checked+span::before {
+  border-color: #0B76EF;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e") #0B76EF;
+}
+
+/*-----Какие стили музыки вы слушаете -----*/
+option {
+  font-family: Comic Sans MS, cursive;
+  ;
+  font-size: 12px;
+}
+
+select {
+  width: 200px;
+}
+
+select::-webkit-scrollbar {
+  width: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #808080;
+}
+
+/*----Ползунок ---*/
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 200px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #C3D2CB;
+  border-radius: 20px;
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -9px;
+  background-color: #18E88D;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+/*------Включить-----*/
+.wrapper {
+  width: 200px;
+  height: 50px;
+}
+
+.switch {
+  margin-left: 40px;
+  position: relative;
+  display: inline-block;
+  width: 60px;    
+  height: 34px;   
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -24px;
+  bottom: 0;
+  background-color: #000000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;  
+  width: 26px;    
+  left: 4px;      
+  bottom: 4px;
+  background-color: #FF0000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FF0000;
+}
+
+input:checked + .slider:before {
+  background-color: #000000;
+  -webkit-transform: translateX(50px); 
+  -ms-transform: translateX(50px);   
+  transform: translateX(50px);      
+}
+
+.slider.round {
+  border-radius: 34px;   
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style_for_form.css">
+  <title>Формы</title>
+</head>
+
+<body>
+  <h1>Форма</h1>
+  <hr>
+  <form action="/">
+    <div>
+      <p>Логин</p>
+      <input type="text" name="log" placeholder="логин">
+      <p>Пароль</p>
+      <input type="password" name="pas" placeholder="пароль">
+    </div>
+    <div>
+     <p>Оцените наш сайт</p>
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span class="radio_text"></span>
+        <span>Отлично</span>
+      </label><br>
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span class="radio_text"></span>
+        <span>Хорошо</span>
+      </label><br>
+      <label class="grade">
+        <input type="radio" name="gra">
+        <span class="radio_text"></span>
+        <span>Плохо</span>
+      </label>
+    </div>
+    <div>
+      <p>Как вы проводите свое свободное время?</p>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Читаю книгу</span>
+      </label><br>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Смотрю ТВ</span>
+      </label class="leisure"><br>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Читаю книгу</span>
+      </label><br>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Слушаю музыку</span>
+      </label><br>
+      <label class="leisure">
+        <input type="checkbox" name="lei">
+        <span>Гуляю с друзьями</span>
+      </label>
+    </div>
+    <div>
+      <p>Какие стили музыки вы слушаете?</p>
+      <select name="form_select" size="4" multiple="multiple">
+        <option value="Поп">Поп</option>
+        <option value="Рэп">Рэп</option>
+        <option value="Рок">Рок</option>
+        <option value="Джаз">Джаз</option>
+        <option value="Кантри">Кантри</option>
+        <option value="Блюз">Блюз</option>
+      </select>
+    </div>
+    <div class="number">
+      <p>Количество</p>
+      <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+      <input type="number" min="0" value="0" readonly>
+      <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+    </div>
+    <div>
+      <p>Количество</p>
+      <input type="range" id="skrol" min="0" max="10" step="2" value="0">
+    </div>
+    <div>
+      <p>Поиск</p>
+      <input type="text" placeholder="поиск" name="">
+    </div>
+    <div>
+      <p>Включить</p>
+      <div class="wrapper">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <div>
+      <p>Ваши интересы</p>
+      <textarea cols="30" rows="5"></textarea>
+    </div>
+    <div>
+      <button>Отправить</button>
+    </div>
+  </form>
+</body>
+
+</html>
