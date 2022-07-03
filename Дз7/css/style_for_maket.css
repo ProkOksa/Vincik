@@ -34,7 +34,7 @@ header {
   background-color: rgba(53, 63, 70, 0.5);
 }
 
-a {
+.main-menu {
   font-family: 'Segoe UI Gras';
   font-weight: bold;
   text-transform: uppercase;
@@ -44,7 +44,7 @@ a {
   transition: all 0.3s linear;
 }
 
-a:hover {
+.main-menu:hover {
   color: #4BCAFF;
   padding: 15px;
   border: 5px solid #4BCAFF;
@@ -102,6 +102,7 @@ a:hover {
 /*-----SERVICES-----*/
 .services {
   background-color: #4BCAFF;
+  padding-top: 30px;
 }
 
 .container_serv {
@@ -181,7 +182,11 @@ a:hover {
 
 .logo {
   flex: 40%;
-  padding-top: 25px;
+  font-family: 'Segoe UI Light';
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #626F76;
+  margin-top: 10px;
 }
 
 .navb {
@@ -194,13 +199,14 @@ a:hover {
   margin: 10px 10px 10px auto;
 }
 
-.line_img{
-padding-bottom: 50px;
+.line_img {
+  padding-bottom: 50px;
 }
+
 .container-photo {
   position: relative;
   float: left;
-  margin: 10px;
+  margin: 15px;
 }
 
 .container-photo,
@@ -239,4 +245,56 @@ padding-bottom: 50px;
   transform: translate(-50%, -50%);
   font-size: xxx-large;
   font-weight: bold;
+}
+
+/*----- Section -----*/
+.container-section {
+  width: 1200px;
+  padding: 80px 15px;
+  margin: 0 auto;
+}
+
+.section-cont {
+  display: inline-block;
+  width: 600px;
+  padding-right: 50px;
+
+}
+
+.logo-sect {
+  font-family: 'Segoe UI Light';
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.line_sect {
+  padding-bottom: 17px;
+}
+
+.tex-se {
+  font-family: 'Segoe UI Light';
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  margin: 17px 0;
+}
+
+.botton-sect {
+  width: 30%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px;
+  color: #353F46;
+  border: 5px solid #353F46;
+  transition: 0.3s;
+}
+
+.vimeo {
+  display: inline-block;
+  width: 540px;
+  height: 300px;
 }
