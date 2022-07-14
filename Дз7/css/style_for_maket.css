@@ -2,31 +2,36 @@ body {
   background-color: #515F67;
 }
 
-							/* ----- NAV BAR ----- */
-header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: rgba(53, 63, 70, 0.5);
+h3 {
+  font-family: 'Segoe UI Light';
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
-.container-heaer {
-  height: 150px;
-  max-width: 1200px;
+h3:after {
+  display: block;
+  width: 50px;
+  content: '';
+  border-bottom: 1px solid;
+  margin-top: 10px;
+}
+
+.container {
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.content {
+/* ----- NAV BAR ----- */
+header {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: rgba(53, 63, 70, 0.5);
+}
+
+.content {
   display: flex;
-  width: 1200px;
-  padding: 0 15px;
+  padding: 30px 0;
 }
 
 .main-menu {
@@ -34,9 +39,10 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 14pt;
+  padding: 15px;
   border: 5px solid transparent;
   transition: all 0.3s linear;
+  display: block;
 }
 
 .main-menu:hover {
@@ -48,64 +54,48 @@ header {
 
 .blueasy {
   flex: 40%;
-  padding-top: 10px;
+  padding-top: 27px;
 }
 
 .navt {
-  flex: 60%;
+  display: flex;
 }
 
 .navt li {
-  float: right;
   margin: 10px 10px 10px auto;
 }
 
-							/*----- HERO ----- */
+/*----- HERO ----- */
 .hero {
   background: url(../img/wheat.png) no-repeat;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 800px;
-  position: relative;
+  padding: 80px 0;
 }
 
-.container-hero {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -55%);
+.conhero {
   text-align: center;
+  padding: 300px 0;
 }
 
 .quote_text {
   font-family: 'Segoe UI Light';
-  font-size: 30pt;
+  font-size: 40px;
   text-transform: uppercase;
   background-color: rgba(53, 63, 70, 0.5);
   color: #FFFFFF;
-  line-height: 65px;
+  line-height: 2em;
 }
 
-							/*-----SERVICES-----*/
+/*-----SERVICES-----*/
 .services {
   background-color: #4BCAFF;
-  height: 275px;
   padding: 80px 0;
 }
 
-.container_serv {
-
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.logo-serv {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-services {
   color: #FFFFFF;
 }
 
@@ -120,7 +110,7 @@ header {
 
 .svcn {
   font-family: 'Segoe UI Semibold';
-  font-size: 21pt;
+  font-size: 25px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 20px 0;
@@ -128,46 +118,29 @@ header {
 
 .svсt {
   font-family: 'Segoe UI Semibold';
-  font-size: 9pt;
+  font-size: 12px;
   color: #FFFFFF;
-  line-height: 1.2;
+  line-height: 1.2em;
   margin-right: 30px;
 }
 
-							/*----- Portfolio -----*/
+/*----- Portfolio -----*/
 .portfolio {
   background-color: #FFFFFF;
   padding: 80px 0;
-}
-
-.container_portf {
-  height: 690px;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .portfolio_nav {
   display: flex;
 }
 
-.logo_port {
+.title-portfolio {
   flex: 40%;
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
   color: #626F76;
-  margin: 10px 0;
 }
 
 .nav_ph {
-  flex: 60%;
-}
-
-.nav_ph li {
-  float: right;
-  padding: 15px;
-  margin: 10px 10px 10px auto;
+  display: flex;
 }
 
 .navp {
@@ -177,6 +150,7 @@ header {
   color: #626F76;
   border: 5px solid transparent;
   transition: all 0.3s linear;
+
 }
 
 .navp:hover {
@@ -190,9 +164,8 @@ header {
 }
 
 .container-photo {
-  position: relative;
-  float: left;
-  margin: 15px;
+  display: inline-block;
+  margin: 11px;
 }
 
 .container-photo,
@@ -217,6 +190,7 @@ header {
   transition: all 0.3s ease-in-out 0s;
   opacity: 0;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .block-photo:hover {
@@ -233,36 +207,29 @@ header {
   font-weight: bold;
 }
 
-							/*----- Section -----*/
+/*----- Section -----*/
 .section {
   padding: 80px 0;
-  height: 390px;
 }
 
-.container-section {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.sect {
   display: flex;
 }
 
 .section-cont {
   flex: 50%;
-  padding-right: 50px;
+  padding-right: 65px;
 }
 
-.logo-sect {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-section {
   color: #FFFFFF;
 }
 
 .tex-se {
   font-family: 'Segoe UI Regular';
-  font-size: 14pt;
+  font-size: 17px;
   color: #FFFFFF;
-  line-height: 1.5;
+  line-height: 1.5em;
   margin: 17px 0;
 }
 
@@ -278,28 +245,25 @@ header {
   transition: 0.3s;
 }
 
-							/*----- Twitter-----*/
+/*----- Twitter-----*/
 .twitter {
   background-color: #4BCAFF;
   padding: 80px 0;
-  height: 170px;
 }
 
-.container-twit {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.cont-for-title-twit {
+  display: flex;
 }
 
-.logo-twit {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-twitter {
   color: #FFFFFF;
+  flex: 80%;
 }
 
-.img-twit {
-  float: right;
+.icon-twit:before {
+  content: "\ea96";
+  font-size: 30px;
+  color: #FFFFFF
 }
 
 .text-twitter {
@@ -308,35 +272,26 @@ header {
 
 .text-twit {
   font-family: 'Segoe UI Light';
-  font-size: 22pt;
+  font-size: 29px;
   color: #FFFFFF;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .name-twit {
   font-family: 'Segoe UI Semibold';
+  color: #FFFFFF;
 }
 
-							/*----- Who is -----*/
+/*----- Who is -----*/
 .who_is {
   background: url(../img/backg_who.png) no-repeat;
   -moz-background-size: cover -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
   padding: 100px 0;
 }
 
-.container-who {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.logo-who {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-who {
   color: #FFFFFF;
 }
 
@@ -357,34 +312,46 @@ header {
 
 .par {
   font-family: 'Segoe UI Regular';
-  font-size: 12pt;
+  font-size: 15px;
   color: #FFFFFF;
-  line-height: 1.5;
+  line-height: 1.5em;
   margin: 20px 0
 }
 
-							/*----- Testimonials -----*/
+.links {
+  font-size: 25px;
+
+}
+
+.icon-twitter:before,
+.icon-google-plus:before,
+.icon-dribbble:before,
+.icon-coffee:before {
+  content: "\ea96";
+  color: #FFFFFF;
+  padding: 15px;
+  border: 5px solid #FFFFFF;
+}
+
+/*----- Testimonials -----*/
 .testimonials {
   background-color: #FFFFFF;
-  height: 240px;
   padding: 80px 0;
 }
 
-.container-testimonials {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.cont-for-title-test {
+  display: flex;
 }
 
-.logo-tes {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-testimonials {
   color: #515F67;
+  flex: 80%;
 }
 
-.img-tes {
-  float: right;
+.icon-quotes-right:before {
+  content: "\e978";
+  font-size: 29px;
+  color: #515F67;
 }
 
 .text-testimonial {
@@ -393,18 +360,18 @@ header {
 
 .text-tes {
   font-family: 'Segoe UI Light';
-  font-size: 22pt;
+  font-size: 29px;
   color: #515F67;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .author-tes {
   font-family: 'Segoe UI Bold';
-  font-size: 11pt;
+  font-size: 15px;
   color: #4BCAFF;
 }
 
-							/*----- contact -----*/
+/*----- contact -----*/
 .contact {
   background: url(../img/backg_cont.png) no-repeat;
   -moz-background-size: cover;
@@ -414,16 +381,7 @@ header {
   padding: 80px 0;
 }
 
-.container-contact {
-  max-width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-
-.logo-cont {
-  font-family: 'Segoe UI Light';
-  font-size: 24pt;
-  text-transform: uppercase;
+.title-contact {
   color: #FFFFFF;
 }
 
@@ -438,7 +396,7 @@ header {
 
 .cont-form {
   font-family: 'Segoe UI Bold';
-  font-size: 10pt;
+  font-size: 13px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 10px;
@@ -462,9 +420,9 @@ input[type="text"]:focus {
 
 .text-cont {
   font-family: 'Segoe UI Semibold';
-  font-size: 10pt;
+  font-size: 15px;
   color: #FFFFFF;
-  line-height: 1.3;
+  line-height: 1.3em;
   padding: 22px 0;
 }
 
@@ -488,16 +446,14 @@ input[type="text"]:focus {
   transition: 0.3s;
 }
 
-							/*----- Footer -----*/
+/*----- Footer -----*/
 footer {
   background-color: #353F47;
+  padding: 80px 0;
 }
 
-.container-footer {
+.foot {
   display: flex;
-  width: 1200px;
-  padding: 80px 15px;
-  margin: 0 auto;
 }
 
 .nav_bottom {
@@ -508,7 +464,7 @@ footer {
   font-family: 'Segoe UI Semibold';
   text-transform: uppercase;
   color: #515F67;
-  padding: 12pt;
+  padding: 12px;
 
 }
 
