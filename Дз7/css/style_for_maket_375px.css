@@ -1,0 +1,113 @@
+/*@media(max-width: 767px) {*/
+header{
+	position: fixed;
+	background-color: #626F76;
+	width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 80px;
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.container {
+  width: 95%;
+}
+
+/*----- HERO ----- */
+.hero {
+  padding: 80px 0;
+}
+
+.conhero {
+  padding: 150px 0;
+}
+
+/*-----SERVICES-----*/
+.services {
+  padding: 80px 0;
+}
+
+.text-serv {
+	display: block;
+  margin-top: 20px;
+}
+
+.option {
+  display: inline-block;
+  width: 45%;
+  padding: 20px 35px 20px 0;
+}
+
+/*----- Section -----*/
+.section {
+  padding: 40px 0;
+}
+
+.sect {
+  display: block;
+}
+
+.vimeo{
+	text-align: center;
+	padding: 15px;
+}
+
+/*----- Twitter-----*/
+.twitter {
+  padding: 40px 0;
+}
+
+/*----- Who is -----*/
+.who_is {
+  padding: 40px 0;
+}
+
+.content-who {
+  display: block;
+}
+
+.text-who1 {
+  padding-right: 0;
+}
+
+.text-who2 {
+  padding-left: 0;
+}
+
+.links {
+	text-align: center;
+  padding: 20px;
+}
+
+.icon{
+	padding: 20px;
+}
+
+/*----- Testimonials -----*/
+.testimonials {
+  padding: 40px 0;
+}
+
+/*----- contact -----*/
+.contact {
+  padding: 40px 0;
+}
+
+/*----- Footer -----*/
+footer {
+  padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+

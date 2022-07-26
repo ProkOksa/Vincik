@@ -34,6 +34,10 @@ header {
   padding: 30px 0;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .main-menu {
   font-family: 'Segoe UI Bold';
   font-weight: bold;
@@ -51,6 +55,11 @@ header {
   border: 5px solid #4BCAFF;
 }
 
+.main-menu:focus {
+  color: #4BCAFF;
+  padding: 15px;
+  border: 5px solid #4BCAFF;
+}
 
 .blueasy {
   flex: 40%;
@@ -118,7 +127,7 @@ header {
 
 .svсt {
   font-family: 'Segoe UI Semibold';
-  font-size: 12px;
+  font-size: 14px;
   color: #FFFFFF;
   line-height: 1.2em;
   margin-right: 30px;
@@ -151,6 +160,12 @@ header {
   border: 5px solid transparent;
   transition: all 0.3s linear;
 
+}
+
+.navp:focus {
+  color: #4BCAFF;
+  padding: 15px;
+  border: 5px solid #4BCAFF;
 }
 
 .navp:hover {
@@ -483,4 +498,312 @@ footer {
   font-family: 'Segoe UI Semibold';
   text-transform: uppercase;
   color: #515F67;
+}
+
+@media(min-width: 375px) {
+  .container {
+    width: 95%;
+  }
+
+  /* ----- NAV BAR ----- */
+  header {
+    position: fixed;
+    background-color: #626F76;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 70px;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .blueasy {
+    padding-top: 0;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+  }
+
+  .menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  .menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+
+  .menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    padding: 15px;
+    background: #626F76;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+  }
+
+  .menu li {
+    list-style-type: none;
+  }
+
+  .navt {
+    display: none;
+  }
+
+  .main-menu:hover {
+    border: 5px solid transparent;
+  }
+
+  /*----- HERO ----- */
+  .conhero {
+    padding: 150px 0;
+  }
+
+  .quote_text {
+    font-size: 25px;
+    line-height: 3em;
+  }
+
+  /*-----SERVICES-----*/
+  .text-serv {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .option {
+    display: inline-block;
+    width: 45%;
+    padding: 20px 35px 20px 0;
+  }
+
+  /*----- Section -----*/
+  .sect {
+    display: block;
+  }
+
+  .tex-se {
+    font-size: 14px;
+  }
+
+  .vimeo {
+    text-align: center;
+    padding: 15px;
+  }
+
+  /*----- Twitter-----*/
+
+  .text-twit {
+    font-size: 20px;
+  }
+
+  /*----- Who is -----*/
+  .content-who {
+    display: block;
+  }
+
+  .text-who1 {
+    padding-right: 0;
+  }
+
+  .text-who2 {
+    padding-left: 0;
+  }
+
+  .par {
+    font-size: 10px;
+  }
+
+  .links {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .icon {
+    padding: 20px;
+  }
+
+  /*----- Testimonials -----*/
+  .text-tes {
+    font-size: 20px;
+  }
+
+  .author-tes {
+    font-size: 14px;
+  }
+
+  /*----- contact -----*/
+  .cont-form {
+    font-size: 10px;
+  }
+
+  .text-cont {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 768px) {
+  .quote_text {
+    font-size: 40px;
+    line-height: 2em;
+  }
+
+  /*----- Section -----*/
+  .tex-se {
+    font-size: 17px;
+  }
+
+  /*----- Twitter-----*/
+
+  .text-twit {
+    font-size: 29px;
+  }
+
+  /*----- Who is -----*/
+  .par {
+    font-size: 15px;
+  }
+
+  .links {
+    font-size: 25px;
+  }
+
+  /*----- Testimonials -----*/
+  .text-tes {
+    font-size: 29px;
+  }
+
+  .author-tes {
+    font-size: 15px;
+  }
+
+  /*----- contact -----*/
+  .cont-form {
+    font-size: 13px;
+
+  }
+
+  .text-cont {
+    font-size: 15px;
+  }
+
+}
+
+@media(min-width: 1024px) {
+
+  /*-----SERVICES-----*/
+  .text-serv {
+    display: flex;
+  }
+}
+
+@media(min-width: 1366px) {
+  header {
+    position: absolute;
+    background-color: rgba(53, 63, 70, 0.5);
+  }
+
+  .container {
+    width: 1200px;
+  }
+
+  /* ----- NAV BAR ----- */
+
+  .blueasy {
+    padding-top: 27px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .navt {
+    display: flex;
+  }
+
+  .main-menu:hover {
+    border: 5px solid #4BCAFF;
+  }
+
+  /*----- HERO ----- */
+  .conhero {
+    padding: 300px 0;
+  }
+
+  /*-----SERVICES-----*/
+  .text-serv {
+    margin-top: 40px;
+  }
+
+  .option {
+    padding: 0;
+  }
+
+  /*----- Section -----*/
+  .sect {
+    display: flex;
+  }
+
+  /*----- Who is -----*/
+  .content-who {
+    display: flex;
+  }
+
+  .text-who1 {
+    padding-right: 60px;
+  }
+
+  .text-who2 {
+    padding-left: 60px;
+  }
+}
+
+@media(min-width: 2560px) {
+  .container {
+    width: 2000px;
+  }
+
 }

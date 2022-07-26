@@ -6,16 +6,16 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style_for_maket.css">
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6488f4fd0a/UntitledProject/style.css">
   <title>Cайт из Photoshop</title>
 </head>
 
 <body>
   <header>
-    <div class="container" id="home">
+    <div class="container">
       <div class="content">
         <div class="blueasy">
-          <a href="/"><img src="img/blueasy.png" alt="blueasy"></a></div>
+          <a href="/"><img src="img/blueasy.png" alt="blueasy"></a>
+        </div>
         <ul class="navt">
           <li><a class="main-menu" href="#home">home</a></li>
           <li><a class="main-menu" href="#services">services</a></li>
@@ -23,11 +23,27 @@
           <li><a class="main-menu" href="#portfolio">portfolio</a></li>
           <li><a class="main-menu" href="#contact">contact</a></li>
         </ul>
+        <div class="burger-menu">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu">
+            <nav>
+              <li><a class="main-menu" href="#home">home</a></li>
+              <li><a class="main-menu" href="#services">services</a></li>
+              <li><a class="main-menu" href="#features">features</a></li>
+              <li><a class="main-menu" href="#portfolio">portfolio</a></li>
+              <li><a class="main-menu" href="#contact">contact</a></li>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container conhero">
         <span class="quote_text">“I’m looking for the unexpected.</span><br>
         <span class="quote_text">I’m looking for things I’ve never seen before.”</span>
@@ -112,7 +128,7 @@
         </div>
         <div class="vimeo">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/7Yy4RP4FMNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        </div>
       </div>
     </section>
     <section class="twitter">
@@ -203,6 +219,7 @@
       <div class="year"><span>2013 &copy</span></div>
     </div>
   </footer>
+  <script src="js/burger-menu.js"></script>
 </body>
 
 </html>
