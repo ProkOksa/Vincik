@@ -335,7 +335,6 @@ header {
 
 .links {
   font-size: 25px;
-
 }
 
 .icon-twitter:before,
@@ -468,6 +467,7 @@ footer {
 
 .foot {
   display: flex;
+  font-size: 20px;
 }
 
 .nav_bottom {
@@ -479,7 +479,6 @@ footer {
   text-transform: uppercase;
   color: #515F67;
   padding: 12px;
-
 }
 
 .nav_bottom li {
@@ -614,9 +613,19 @@ footer {
   }
 
   .option {
-    display: inline-block;
-    width: 45%;
     padding: 20px 35px 20px 0;
+  }
+
+  .img_svc{
+  	display: none;
+  }
+
+  /*----- Portfolio -----*/
+  .container-photo,
+  .container-photo div,
+  .container-photo img {
+    width: 800px;
+    height: 800px;
   }
 
   /*----- Section -----*/
@@ -630,7 +639,7 @@ footer {
 
   .vimeo {
     text-align: center;
-    padding: 15px;
+    padding: 30px;
   }
 
   /*----- Twitter-----*/
@@ -680,15 +689,42 @@ footer {
     font-size: 10px;
   }
 
-  .text-cont {
-    font-size: 12px;
+  .block-in-form{
+    display: block;
   }
+
+  .cont-for-text{
+  	display: none;
+  }
+
+  /*----- Footer -----*/
+	footer{
+		display: none;
+	}
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1024px) {
   .quote_text {
     font-size: 40px;
     line-height: 2em;
+  }
+
+	/*-----SERVICES-----*/
+	 .option {
+	 	display: inline-block;
+	 	width: 45%;
+	 }
+
+    .img_svc{
+  	display: block;
+  }
+
+  /*----- Portfolio -----*/
+  .container-photo,
+  .container-photo div,
+  .container-photo img {
+    width: 450px;
+    height: 450px;
   }
 
   /*----- Section -----*/
@@ -729,15 +765,6 @@ footer {
   .text-cont {
     font-size: 15px;
   }
-
-}
-
-@media(min-width: 1024px) {
-
-  /*-----SERVICES-----*/
-  .text-serv {
-    display: flex;
-  }
 }
 
 @media(min-width: 1366px) {
@@ -775,16 +802,30 @@ footer {
 
   /*-----SERVICES-----*/
   .text-serv {
+  	display: flex;
     margin-top: 40px;
   }
 
   .option {
+  	display: block;
     padding: 0;
+  }
+
+  /*----- Portfolio -----*/
+  .container-photo,
+  .container-photo div,
+  .container-photo img {
+    width: 270px;
+    height: 270px;
   }
 
   /*----- Section -----*/
   .sect {
     display: flex;
+  }
+  
+  .vimeo{
+  	padding: 0;
   }
 
   /*----- Who is -----*/
@@ -799,11 +840,24 @@ footer {
   .text-who2 {
     padding-left: 60px;
   }
+
+  /*----- contact -----*/
+    .block-in-form{
+    display: flex;
+  }
+
+  .cont-for-text{
+  	display: block;
+  }
+
+  /*----- Footer -----*/
+	footer{
+		display: block;
+	}
 }
 
 @media(min-width: 2560px) {
   .container {
     width: 2000px;
   }
-
 }
