@@ -17,7 +17,7 @@ h3:after {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -500,10 +500,6 @@ footer {
 }
 
 @media(min-width: 375px) {
-  .container {
-    width: 95%;
-  }
-
   /* ----- NAV BAR ----- */
   header {
     position: fixed;
@@ -512,8 +508,6 @@ footer {
     top: 0;
     left: 0;
     z-index: 20;
-    height: 70px;
-    display: flex;
     padding: 5px 0;
     align-items: center;
     justify-content: space-between;
@@ -616,8 +610,8 @@ footer {
     padding: 20px 35px 20px 0;
   }
 
-  .img_svc{
-  	display: none;
+  .img_svc {
+    display: none;
   }
 
   /*----- Portfolio -----*/
@@ -626,6 +620,11 @@ footer {
   .container-photo img {
     width: 800px;
     height: 800px;
+  }
+
+  .container-photo{
+  	display: block;
+  	margin: 10px auto;
   }
 
   /*----- Section -----*/
@@ -689,18 +688,18 @@ footer {
     font-size: 10px;
   }
 
-  .block-in-form{
+  .block-in-form {
     display: block;
   }
 
-  .cont-for-text{
-  	display: none;
+  .cont-for-text {
+    display: none;
   }
 
   /*----- Footer -----*/
-	footer{
-		display: none;
-	}
+  footer {
+    display: none;
+  }
 }
 
 @media(min-width: 1024px) {
@@ -709,14 +708,14 @@ footer {
     line-height: 2em;
   }
 
-	/*-----SERVICES-----*/
-	 .option {
-	 	display: inline-block;
-	 	width: 45%;
-	 }
+  /*-----SERVICES-----*/
+  .option {
+    display: inline-block;
+    width: 45%;
+  }
 
-    .img_svc{
-  	display: block;
+  .img_svc {
+    display: block;
   }
 
   /*----- Portfolio -----*/
@@ -725,6 +724,7 @@ footer {
   .container-photo img {
     width: 450px;
     height: 450px;
+    display: inline-block;
   }
 
   /*----- Section -----*/
@@ -773,11 +773,7 @@ footer {
     background-color: rgba(53, 63, 70, 0.5);
   }
 
-  .container {
-    width: 1200px;
-  }
-
-  /* ----- NAV BAR ----- */
+	/* ----- NAV BAR ----- */
 
   .blueasy {
     padding-top: 27px;
@@ -802,12 +798,12 @@ footer {
 
   /*-----SERVICES-----*/
   .text-serv {
-  	display: flex;
+    display: flex;
     margin-top: 40px;
   }
 
   .option {
-  	display: block;
+    display: block;
     padding: 0;
   }
 
@@ -819,13 +815,18 @@ footer {
     height: 270px;
   }
 
+  .container-photo {
+  display: inline-block;
+  margin: 11px;
+}
+
   /*----- Section -----*/
   .sect {
     display: flex;
   }
-  
-  .vimeo{
-  	padding: 0;
+
+  .vimeo {
+    padding: 0;
   }
 
   /*----- Who is -----*/
@@ -842,22 +843,22 @@ footer {
   }
 
   /*----- contact -----*/
-    .block-in-form{
+  .block-in-form {
     display: flex;
   }
 
-  .cont-for-text{
-  	display: block;
+  .cont-for-text {
+    display: block;
   }
 
   /*----- Footer -----*/
-	footer{
-		display: block;
-	}
+  footer {
+    display: block;
+  }
 }
 
 @media(min-width: 2560px) {
   .container {
-    width: 2000px;
+    max-width: 2000px;
   }
 }
