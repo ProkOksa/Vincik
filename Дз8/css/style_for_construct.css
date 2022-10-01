@@ -430,6 +430,7 @@ h1 {
 }
 
 .cont-img-serv {
+  display: none;
   flex: 50%;
 }
 
@@ -554,7 +555,6 @@ h4 {
 
 /* ------- PORTFOLIO -------*/
 .portfolio {
-  padding-bottom: 510px;
   margin: 110px 0;
 }
 
@@ -578,34 +578,28 @@ h4 {
 }
 
 .portfolio_img {
-  position: absolute;
-  left: 0;
-  right: 0;
   display: flex;
 }
 
-.container-photo {
-  display: inline-block;
+.container-photo{
+  width: 25%;
+  position: relative;
 }
 
-.container-photo,
-.container-photo div,
-.container-photo img {
-  width: 450px;
-  flex: 25%;
-}
-
-.container-photo div,
-.container-photo img {
+.container-photo div {
   position: absolute;
 }
 
 .container-photo img {
-  z-index: 0;
+  width: 100%;
 }
 
 .block-photo {
   z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: #FFC000;
   transition: all 0.3s ease-in-out 0s;
   opacity: 0;
@@ -830,7 +824,7 @@ footer {
 }
 
 input[name="email"] {
-  width: 100%;
+  width: 90%;
   font-family: 'Open Sans';
   font-size: 40px;
   color: #0C0E37;
@@ -902,7 +896,9 @@ input[name="email"]::placeholder {
   }
 
   /* ------- OUR SERVICE ------- */
-
+  .cont-img-serv {
+  display: block;
+}
 
   /* ------- WATCH VIDEO ------- */
   .watch_video {
@@ -940,9 +936,7 @@ input[name="email"]::placeholder {
     margin: 0;
   }
 
-  /* ------- PORTFOLIO -------*/
-
-  /* ------- TEAM ------- */
+    /* ------- TEAM ------- */
   .our-team {
     display: flex;
     margin: 0 -25px;
@@ -982,8 +976,6 @@ input[name="email"]::placeholder {
     margin: 0;
   }
 }
-
-
 
 @media(min-width: 1366px) {
 
@@ -1028,9 +1020,6 @@ input[name="email"]::placeholder {
     margin: 0 30px;
   }
 
-  /* ------- OUR SERVICE ------- */
-
-
   /* ------- WATCH VIDEO ------- */
   .watch_video {
     padding: 50px 0;
@@ -1067,8 +1056,6 @@ input[name="email"]::placeholder {
   h4 {
     margin: 0;
   }
-
-  /* ------- PORTFOLIO -------*/
 
   /* ------- TESTIMONIALS -------*/
   .client-name {
