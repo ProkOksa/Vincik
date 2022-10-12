@@ -25,18 +25,22 @@ positions.push('Экзоскелет Trooper-111', 'Нейроинтерфейс
 
 console.log('Окончательный список наименований');
 
-for (let i = 0; i <= positions.length - 1; i++) {
-  console.log(`${i + 1} ${positions[i]}`);
-}
+positions.forEach(function(item, i) {
+  console.log( `${i + 1} ${item}`);
+});
 
 // Задача 3
-let firstIndex = (positions.indexOf('Машина времени DeLorean'));
-let removal = (positions.splice(firstIndex, 1));
- positions.unshift(removal);
+let firstIndex = positions.indexOf('Машина времени DeLorean');
+positions.splice(firstIndex, 1);
+positions.unshift('Машина времени DeLorean');
 
- console.log('Принять в первую очередь');
- for (let i = 0; i <3; i++) {
-  console.log(`${i + 1} ${positions[i]}`);
+console.log('Принять в первую очередь');
+
+for (let index in positions) {
+  if (index > '2'){
+    break;
+  }
+  console.log(positions[index])
 }
 
 // Задача 4
@@ -52,3 +56,5 @@ console.log('Остальные товары');
  for (let i = 5; i < positions.length; i++) {
   console.log(`${i + 1} ${positions[i]}`);
 }
+
+
