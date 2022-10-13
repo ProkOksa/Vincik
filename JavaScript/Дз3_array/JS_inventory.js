@@ -31,16 +31,13 @@ positions.forEach(function(item, i) {
 
 // Задача 3
 let firstIndex = positions.indexOf('Машина времени DeLorean');
-positions.splice(firstIndex, 1);
-positions.unshift('Машина времени DeLorean');
+let removal = (positions.splice(firstIndex, 1))[0];
+positions.unshift(removal);
 
 console.log('Принять в первую очередь');
 
-for (let index in positions) {
-  if (index > '2'){
-    break;
-  }
-  console.log(positions[index])
+for (let item of positions.slice(0, 3)){
+  console.log(item);
 }
 
 // Задача 4
