@@ -20,54 +20,102 @@ let warrantyValue = calcWarrantyCost();
 console.log(`Дополнительное гарантийное обслуживание: ${warrantyValue} Q`);
 
 //Задача 2
-let qwe = confirm('Я хочу грайвировку!')
+function countEngravingСost() {
+  let qwe = confirm('Я хочу грайвировку!')
+  if (qwe == true) {
+    let string = prompt('Укажите текст грайвировки:', '');
+    let words = string.split(' ');
+    let numberWordsEngraving = !!string ? words.length : 0;
 
-if (qwe == true) {
-  const string = prompt('Укажите текст грайвировки:', '');
-  const words = string.split(' ');
-
-  let numberWordsEngraving = !!string ? words.length : 0;
-  let priceOf1Word = 11;
-
-  function calcEngravingCost(numberWordsEngraving) {
-    if (!numberWordsEngraving || string === 'undefined') {
-      console.log(`Подарочная упаковка и гравировка: 0 Q`);
-    } else if (numberWordsEngraving > 0) {
-      console.log(`Подарочная упаковка и гравировка: ${numberWordsEngraving * priceOf1Word} Q`);
+    function calcEngravingCost(numberWordsEngraving) {
+      if (!numberWordsEngraving || string === 'undefined') {
+        return 0;
+      } else if (numberWordsEngraving > 0) {
+        let priceOf1Word = 11;
+        let qwerr = priceOf1Word * numberWordsEngraving;
+        return qwerr;
+      }
     }
+  } else {
+    alert('Вам не нужна грайвировка. Хорошего дня. Заходите к нам еще.')
+    return 0;
   }
-  calcEngravingCost(numberWordsEngraving);
-} else {
-  alert('Вам не нужна грайвировка. Хорошего дня. Заходите к нам еще.')
-  console.log(`Подарочная упаковка и гравировка: 0 Q`)
 }
+let engravingСost = countEngravingСost();
+console.log(`Подарочная упаковка и гравировка: ${engravingСost} Q`);
 
 // Задача 3
-let deliv = delivery();
+let deliveryRegion;
+let needForDelivery;
 
-function delivery(needForDelivery = prompt('Нужна ли вам доставка?', '')) {
+function delivery(needForDelivery = prompt('Нужна ли вам доставка. Ввеите да или нет', '')) {
   if (needForDelivery === 'да') {
     let deliveryRegion = prompt('Укажите куда доставить товар', '');
     if (deliveryRegion == 'Луна') {
-      alert('Вы указади облость доставки Луна');
-      console.log('Стоимость доставки: 150 Q');
+      alert(`Вы указади облость доставки ${deliveryRegion}`);
+      return 150;
     } else if (deliveryRegion == 'Крабовидная туманность') {
-      alert('Вы указади облость доставки Крабовидная туманность');
-      console.log('Стоимость доставки: 250 Q');
+      alert(`Вы указади облость доставки ${deliveryRegion}`);
+      return 250;
     } else if (deliveryRegion == 'Галактика Туманность Андромеды') {
-      alert('Вы указади облость доставки Галактика Туманность Андромеды');
-      console.log('Стоимость доставки: 550 Q');
+      alert(`Вы указади облость доставки ${deliveryRegion}`);
+      return 550;
     } else if (deliveryRegion == 'Туманность Ориона') {
-      alert('Вы указади облость доставки Туманность Ориона');
-      console.log('Стоимость доставки: 600 Q');
+      alert(`Вы указади облость доставки ${deliveryRegion}`);
+      return 600;
     } else {
       alert('В ваш регион доставка не осуществляется');
-      console.log('Доставка не требуется');
+      return 0;
     }
   } else if (needForDelivery == 'нет') {
     alert('Вам не ребуется доставка');
-    console.log('Доставка не требуется');
+    return 0;
   } else {
-    console.log('Ошибка при расчете стоимости доставки');
+    return NaN;
   }
 }
+
+let result = delivery();
+showInformationDelivery()
+
+function showInformationDelivery() {
+  if (result > 0) {
+    console.log(`Стоимость доставки: ${result} Q`);
+  } else if (result == 0) {
+    console.log(`Доставка не требуется`);
+  } else {
+    console.log(`Ошибка при расчете стоимости доставки`);
+  }
+}
+
+console.log(``);
+
+// Задача 4
+let price = 200;
+let general = [];
+
+function totalCost(price, years, string, delivery){ 
+  //  стоимость товара,    срок гарантии,     фразу для гравировки,     доставка
+return price + warrantyValue + engravingСost + result;
+}
+general[0] = totalCost();
+
+function calcWarrantyCost(years) {
+  return warrantyValue;
+}
+general[1] = calcWarrantyCost();
+
+function qwer(string){
+ return engravingСost;
+}
+general[2] = qwer();
+
+function qw(delivery){
+ return result;
+}
+general[3] = qw();
+ 
+console.log(`Общая стоимость заказа: ${general[0]} Q.`);
+console.log(`Из них ${general[1]} Q за гарантийное обслуживание на ${years} год/года.`);
+console.log(`Гравировка на сумму ${general[2]} Q.`);
+console.log(`Доставка в область ${deliveryRegion}: ${general[3]} Q.`);
