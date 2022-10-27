@@ -1,121 +1,94 @@
 //Задача 1
-let years;
 let needForGuarantee = confirm('Нужна ли вам дополнительная гаранитя');
-if (needForGuarantee == true) {
-  function calcWarrantyCost(years = parseFloat(prompt('Укажите скрок дополнительной гарантии', '1 или 2'))) {
-    if (years !== 1 || years !== 2) {
-      alert('Вы указали что вам не нужна дополнительная гарантия')
-      return 0;
-    } else {
-      alert('Спасибо!')
-      return years === 1 ? 1250 : 2300;
-    }
-  }
-} else {
-  alert('Хорошего дня!')
-}
+let years
+let warrantyValue;
 
-let warrantyValue = calcWarrantyCost();
-
-console.log(`Дополнительное гарантийное обслуживание: ${warrantyValue} Q`);
-
-//Задача 2
-function countEngravingСost() {
-  let qwe = confirm('Я хочу грайвировку!')
-  if (qwe == true) {
-    let string = prompt('Укажите текст грайвировки:', '');
-    let words = string.split(' ');
-    let numberWordsEngraving = !!string ? words.length : 0;
-
-    function calcEngravingCost(numberWordsEngraving) {
-      if (!numberWordsEngraving || string === 'undefined') {
-        return 0;
-      } else if (numberWordsEngraving > 0) {
-        let priceOf1Word = 11;
-        let qwerr = priceOf1Word * numberWordsEngraving;
-        return qwerr;
-      }
-    }
+function calcWarrantyCost(age) {
+  if (age === 1 || age === 2) {
+    return age === 1 ? 1250 : 2300;
   } else {
-    alert('Вам не нужна грайвировка. Хорошего дня. Заходите к нам еще.')
     return 0;
   }
 }
-let engravingСost = countEngravingСost();
-console.log(`Подарочная упаковка и гравировка: ${engravingСost} Q`);
+
+if (!!needForGuarantee) {
+  years = parseFloat(prompt('Укажите скрок дополнительной гарантии', '1 или 2', ''));
+  warrantyValue = calcWarrantyCost(years);
+  console.log(`Дополнительное гарантийное обслуживание: ${warrantyValue} Q`);
+} else {
+  console.log(`Дополнительное гарантийное обслуживание: 0 Q`);
+}
+
+//Задача 2
+let needForEngraving = confirm('Хотите ли вы грайвировку на товаре?');
+let engravingСost;
+
+function countEngravingСost() {
+  let string = prompt('Укажите текст грайвировки:', '');
+  let words = string.split(' ');
+  let numberWordsEngraving = !!string ? words.length : 0;
+  if (!numberWordsEngraving || string === 'undefined') {
+    return 0;
+  } else if (numberWordsEngraving > 0) {
+    let priceOf1Word = 11;
+    return priceOf1Word * numberWordsEngraving;
+  }
+}
+
+if (!!needForEngraving) {
+  engravingСost = countEngravingСost()
+  console.log(`Подарочная упаковка и гравировка: ${engravingСost} Q`);
+} else {
+  console.log(`Подарочная упаковка и гравировка: 0 Q`);
+}
 
 // Задача 3
 let deliveryRegion;
-let needForDelivery;
+let needForDelivery = confirm('Нужна ли вам доставка?');
 
-function delivery(needForDelivery = prompt('Нужна ли вам доставка. Ввеите да или нет', '')) {
-  if (needForDelivery === 'да') {
-    let deliveryRegion = prompt('Укажите куда доставить товар', '');
-    if (deliveryRegion == 'Луна') {
-      alert(`Вы указади облость доставки ${deliveryRegion}`);
+function delivery(isNeedDelivery) {
+  if (!!isNeedDelivery) {
+    deliveryRegion = prompt('Укажите регион доставки', '');
+    if (deliveryRegion === 'Луна') {
       return 150;
-    } else if (deliveryRegion == 'Крабовидная туманность') {
-      alert(`Вы указади облость доставки ${deliveryRegion}`);
+    } else if (deliveryRegion === 'Крабовидная туманность') {
       return 250;
-    } else if (deliveryRegion == 'Галактика Туманность Андромеды') {
-      alert(`Вы указади облость доставки ${deliveryRegion}`);
+    } else if (deliveryRegion === 'Галактика Туманность Андромеды') {
       return 550;
-    } else if (deliveryRegion == 'Туманность Ориона') {
-      alert(`Вы указади облость доставки ${deliveryRegion}`);
+    } else if (deliveryRegion === 'Туманность Ориона') {
       return 600;
     } else {
-      alert('В ваш регион доставка не осуществляется');
-      return 0;
+      return NaN;
     }
-  } else if (needForDelivery == 'нет') {
-    alert('Вам не ребуется доставка');
-    return 0;
   } else {
-    return NaN;
+    return 0;
   }
 }
 
-let result = delivery();
-showInformationDelivery()
+let result = delivery(needForDelivery);
+showInformationDelivery();
 
 function showInformationDelivery() {
   if (result > 0) {
     console.log(`Стоимость доставки: ${result} Q`);
-  } else if (result == 0) {
+  } else if (result === 0) {
     console.log(`Доставка не требуется`);
   } else {
     console.log(`Ошибка при расчете стоимости доставки`);
   }
 }
-
-console.log(``);
+console.log(`\n`);
 
 // Задача 4
-let price = 200;
-let general = [];
+let totalCost;
 
-function totalCost(price, years, string, delivery){ 
-  //  стоимость товара,    срок гарантии,     фразу для гравировки,     доставка
-return price + warrantyValue + engravingСost + result;
+function totalCostCount(price) {
+  return price + warrantyValue + engravingСost + result;
 }
-general[0] = totalCost();
 
-function calcWarrantyCost(years) {
-  return warrantyValue;
-}
-general[1] = calcWarrantyCost();
+totalCost = totalCostCount(1000);
 
-function qwer(string){
- return engravingСost;
-}
-general[2] = qwer();
-
-function qw(delivery){
- return result;
-}
-general[3] = qw();
- 
-console.log(`Общая стоимость заказа: ${general[0]} Q.`);
-console.log(`Из них ${general[1]} Q за гарантийное обслуживание на ${years} год/года.`);
-console.log(`Гравировка на сумму ${general[2]} Q.`);
-console.log(`Доставка в область ${deliveryRegion}: ${general[3]} Q.`);
+console.log(`Общая стоимость заказа: ${totalCost} Q.` + `\n` +
+  `Из них ${warrantyValue} Q за гарантийное обслуживание на ${years} год/года.` + `\n` +
+  `Гравировка на сумму ${engravingСost} Q` + `\n` +
+  `Доставка в область ${deliveryRegion}: ${result} Q.`);
