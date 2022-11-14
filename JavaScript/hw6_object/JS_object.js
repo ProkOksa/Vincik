@@ -26,31 +26,12 @@ console.log(`Хит продаж мартобря: <${hit.name}> цена ${hit.
 
 // Задача 2
 let items = [];
-let pos1 = {};
-pos1.name = positions[0];
-pos1.price = prices[0];
 
-let pos2= {};
-pos2.name = positions[1];
-pos2.price = prices[1];
-
-let pos3 = {};
-pos3.name = positions[2];
-pos3.price = prices[2];
-
-let pos4 = {};
-pos4.name = positions[3];
-pos4.price = prices[3];
-
-let pos5 = {};
-pos5.name = positions[4];
-pos5.price = prices[4];
-
-items.push(pos1);
-items.push(pos2);
-items.push(pos3);
-items.push(pos4);
-items.push(pos5);
+for (let i = 0; i < positions.length; i++) {
+  items[i] = {};
+  items[i].name = positions[i];
+  items[i].price = prices[i];
+}
 
 console.log(`Купите ${items[4].name} по цене ${items[4].price} Q`);
 
@@ -86,7 +67,7 @@ items[3]['amount'] = 4;
 function updateAmount(product, consumption = 1) {
   if (product.amount === undefined) {
     return;
-  } else if (product.amount = 0 || consumption > product.amount) {
+  } else if (product.amount === 0 || consumption > product.amount) {
     console.log(`${product.name} закончился на складе`);
   } else if(product.amount > consumption) {
     product.amount -= consumption;
