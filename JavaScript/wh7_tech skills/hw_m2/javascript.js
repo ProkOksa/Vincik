@@ -2,7 +2,7 @@
 let num = prompt('Укажите число', '');
 let exp = prompt('Укажите степень', '');
 
-console.log(`${num} в степени ${exp} = ${Math.pow(num, exp)}`);
+console.log(`${num} в степени ${exp} = ${num ** exp}`);
 
 //2
 let arr = [];
