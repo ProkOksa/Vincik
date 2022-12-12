@@ -1,0 +1,21 @@
+body {
+	font-family: Trebuchet MS, sans-serif;
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	margin: 10px 5px;
+}
+
+label {
+	display: block;
+	margin: 5px 20px;
+}
+
+button {
+	padding: 5px 10 px;
+	margin: 15px 50px;
+}
